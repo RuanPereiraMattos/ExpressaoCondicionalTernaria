@@ -18,6 +18,8 @@ public class ExpressaoCondicionalTernaria {
 
         double desconto;
 
+        double descontoTernario = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+
         if (preco < 20.0) {
             desconto = preco * 0.1;
         } else {
@@ -25,5 +27,7 @@ public class ExpressaoCondicionalTernaria {
         }
 
         System.out.println("R$ " + desconto + " de Desconto");
+
+        System.out.println("R$ " + descontoTernario + " de Desconto");
     }
 }
